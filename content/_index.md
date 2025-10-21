@@ -1,5 +1,6 @@
 ---
 title: "Zachary Witte"
+draft: false
 ---
 
 ## Welcome

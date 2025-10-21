@@ -2,6 +2,7 @@
 title: "About"
 url: "/about/"
 ShowReadingTime: false
+draft: false
 ---
 
 Hi, I'm Zachary Witte. I'm a software developer focused on building tools and exploring AI integrations.
