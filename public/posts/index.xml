@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Zachary Witte</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Zachary Witte</description>
+    <title>Blog on Zachary Witte</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Blog on Zachary Witte</description>
     <generator>Hugo -- 0.151.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Oct 2025 20:16:24 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
       <link>http://localhost:1313/posts/first-post/</link>
@@ -22,23 +22,6 @@
 &lt;li&gt;Build cool things&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;My list of goals for the future may seem simple to most people but right now this is what I want to do. My favorite part about coding is that I can build something that does something for myself or for other people. I would consider myself to be a creative builder more than anything else. I don&amp;rsquo;t care if it is AI or robotics or even wood working. I just love to create things for myself and the people in my life to enjoy.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;h2 id=&#34;mcp-servers&#34;&gt;MCP Servers&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ve built several Model Context Protocol servers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[Project Name]&lt;/strong&gt; - Brief description&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Project Name]&lt;/strong&gt; - Brief description&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[Add links to your GitHub repos]&lt;/p&gt;
-&lt;h2 id=&#34;ai-assistant&#34;&gt;AI Assistant&lt;/h2&gt;
-&lt;p&gt;[Describe your AI assistant project]&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;More projects coming soon. Check back or follow me on [GitHub/LinkedIn/etc]&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

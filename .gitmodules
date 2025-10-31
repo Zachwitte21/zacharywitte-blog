@@ -1,0 +1,4 @@
+# Git submodules removed - using Hugo modules instead
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git

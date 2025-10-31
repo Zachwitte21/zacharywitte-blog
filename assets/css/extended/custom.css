@@ -1,0 +1,55 @@
+/* Custom baby blue background - #89CFF0 */
+:root {
+    --theme: #89CFF0;
+    --entry: #89CFF0;
+    --primary: #000000;
+    --secondary: #000000;
+    --tertiary: #000000;
+    --content: #000000;
+    --hljs-bg: #89CFF0;
+    --code-bg: #89CFF0;
+    --border: #5fb5d9;
+}
+
+body {
+    background-color: #89CFF0;
+    color: #000000;
+}
+
+.main {
+    background-color: #89CFF0;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+}
+
+p, .post-content {
+    color: #000000;
+}
+
+/* Header and navigation */
+.header, .nav {
+    background-color: #89CFF0;
+}
+
+/* Footer */
+.footer {
+    background-color: #89CFF0;
+    color: #000000;
+}
+
+/* Post entries/cards */
+.post-entry {
+    background-color: #89CFF0;
+    border-color: #5fb5d9;
+}

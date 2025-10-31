@@ -1,9 +1,9 @@
----
-title: "Projects"
-url: "/projects/"
-ShowReadingTime: false
-draft: false
----
++++
+title = "Projects"
+url = "/projects/"
+ShowReadingTime = false
+draft = false
++++
 
 ## MCP Servers
 
