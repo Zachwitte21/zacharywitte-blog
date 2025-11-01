@@ -31,14 +31,11 @@
       <description>&lt;h2 id=&#34;mcp-servers&#34;&gt;MCP Servers&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve built several Model Context Protocol servers:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[Project Name]&lt;/strong&gt; - Brief description&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Project Name]&lt;/strong&gt; - Brief description&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;International Weather&lt;/strong&gt; - This is a local MCP server that you can download from my github and use with application like claude desktop to give models access to international weather data. This was the second MCP server that I made and it was programmed in typescript. &lt;a href=&#34;https://github.com/Zachwitte21/Open-Meteo-MCP-Server&#34;&gt;https://github.com/Zachwitte21/Open-Meteo-MCP-Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;National Weather Service&lt;/strong&gt; - This is a local MCP server that I built using python to give AI models access to the National Weather Service Forcasts and Alerts. &lt;a href=&#34;https://github.com/Zachwitte21/weather-mcp&#34;&gt;https://github.com/Zachwitte21/weather-mcp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[Add links to your GitHub repos]&lt;/p&gt;
-&lt;h2 id=&#34;ai-assistant&#34;&gt;AI Assistant&lt;/h2&gt;
-&lt;p&gt;[Describe your AI assistant project]&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;More projects coming soon. Check back or follow me on [GitHub/LinkedIn/etc]&lt;/em&gt;&lt;/p&gt;</description>
+&lt;h2 id=&#34;university-of-delaware-virtual-campus&#34;&gt;University of Delaware Virtual Campus&lt;/h2&gt;
+&lt;p&gt;During college at the University of Delaware I conducted drone research on a small team of 6 students where we used drones to take scans of buildings and then recreate them as 3d models using photogrammetry and machine learning. At the end of the year I took those scans and create a virtual tour website that anyone can use to fly around the UDel campus and see what it looks like.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
