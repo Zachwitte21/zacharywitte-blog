@@ -9,8 +9,8 @@ theme = 'PaperMod'
       unsafe = true
 
 [params]
-  defaultTheme = "light"
-  disableThemeToggle = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true

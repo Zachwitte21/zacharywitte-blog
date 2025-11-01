@@ -10,7 +10,8 @@
       "Bash(where go:*)",
       "Bash(where:*)",
       "Bash(mkdir:*)",
-      "mcp__figma__get_screenshot"
+      "mcp__figma__get_screenshot",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
