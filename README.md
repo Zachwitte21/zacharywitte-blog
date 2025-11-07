@@ -40,6 +40,13 @@ This is the personal website of Zachary Witte, a software developer focused on b
    hugo serve -D
    ```
 
+## Debugging
+
+1. Content is not loading properly
+```
+hugo server --disableFastRender
+```
+
 ## Creating Content
 
 ### New Blog Post
