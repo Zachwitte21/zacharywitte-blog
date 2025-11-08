@@ -9,7 +9,7 @@ draft = false
 
 I've built several Model Context Protocol servers:
 
-- **International Weather** - This is a local MCP server that you can download from my github and use with application like claude desktop to give models access to international weather data. This was the second MCP server that I made and it was programmed in typescript. https://github.com/Zachwitte21/Open-Meteo-MCP-Server
+- **International Weather** - This is a local MCP server that you can download from my github and use with application like claude desktop to give models access to international weather data. This was the second MCP server that I made and it was programmed in typescript. https://github.com/Zachwitte21/Global-Weather-MCP
 - **National Weather Service** - This is a local MCP server that I built using python to give AI models access to the National Weather Service Forcasts and Alerts. https://github.com/Zachwitte21/weather-mcp
 
 ## University of Delaware Virtual Campus
