@@ -5,6 +5,17 @@ ShowReadingTime = false
 draft = false
 +++
 
+## Disc Selection AI Agent
+
+An intelligent disc selection assistant built on Azure Cloud using the GPT-4o-mini model to help disc golf players find the perfect discs for their game. The agent provides personalized disc recommendations by analyzing user inputs including skill level, throwing style, course conditions, and existing discs in their bag.
+Designed to be accessible for all players, this AI agent is particularly valuable for beginners navigating the overwhelming variety of disc golf options on the market. By leveraging natural language processing, the agent simplifies the disc selection process and helps players make informed decisions tailored to their specific needs and playing conditions.
+The application is deployed on Azure, ensuring reliable performance and scalability for users seeking expert guidance on building or expanding their disc golf arsenal.
+
+<video width="100%" style="max-width: 800px; margin: 2rem auto; display: block;" controls>
+  <source src="/videos/Disc%20Agent%20Demo%20v1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## MCP Servers
 
 I've built several Model Context Protocol servers:

@@ -13,7 +13,8 @@
       "mcp__figma__get_screenshot",
       "Bash(cat:*)",
       "WebSearch",
-      "WebFetch(domain:bootstrap.hugoblox.com)"
+      "WebFetch(domain:bootstrap.hugoblox.com)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

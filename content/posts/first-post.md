@@ -16,4 +16,4 @@ I am starting a small blog to help me keep track of my work and explain some of 
 
 My list of goals for the future may seem simple to most people but right now this is what I want to do. My favorite part about coding is that I can build something that does something for myself or for other people. I would consider myself to be a creative builder more than anything else. I don't care if it is AI or robotics or even wood working. I just love to create things for myself and the people in my life to enjoy. 
 
-- Zachary
+- Zachary Witte

@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog on Zachary Witte</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Blog on Zachary Witte</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Oct 2025 20:16:24 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 15:22:12 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents With Mcp</title>
+      <link>http://localhost:1313/posts/ai-agents-with-mcp/</link>
+      <pubDate>Sun, 09 Nov 2025 15:22:12 -0500</pubDate>
+      <guid>http://localhost:1313/posts/ai-agents-with-mcp/</guid>
+      <description>&lt;p&gt;Goals for this post.&lt;/p&gt;
+&lt;p&gt;Over the past few months, I’ve been diving deep into the world of Artificial Intelligence. With a background in cloud services like AWS and Microsoft Azure, it’s been a natural fit to use Azure as my main AI hub. One of my favorite recent projects involves building an AI agent for some friends’ disc golf website. The goal is to help players find the right discs based on experience level, throwing style, and the typical courses they play.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>First Post</title>
       <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Thu, 23 Oct 2025 20:16:24 -0400</pubDate>
       <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;p&gt;Hello Everyone,&lt;/p&gt;&#xA;&lt;p&gt;I am starting a small blog to help me keep track of my work and explain some of the concepts or projects that I am currently learning and working on. Ideally as I start to work on more projects, this will become a great source of information for anyone that is wanting to start a career in technology.&lt;/p&gt;&#xA;&lt;h1 id=&#34;future-goals&#34;&gt;Future Goals&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Learn about AI&lt;/li&gt;&#xA;&lt;li&gt;Implement fun and impactful AI solutions&lt;/li&gt;&#xA;&lt;li&gt;Build cool things&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;My list of goals for the future may seem simple to most people but right now this is what I want to do. My favorite part about coding is that I can build something that does something for myself or for other people. I would consider myself to be a creative builder more than anything else. I don&amp;rsquo;t care if it is AI or robotics or even wood working. I just love to create things for myself and the people in my life to enjoy.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello Everyone,&lt;/p&gt;
+&lt;p&gt;I am starting a small blog to help me keep track of my work and explain some of the concepts or projects that I am currently learning and working on. Ideally as I start to work on more projects, this will become a great source of information for anyone that is wanting to start a career in technology.&lt;/p&gt;
+&lt;h1 id=&#34;future-goals&#34;&gt;Future Goals&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Learn about AI&lt;/li&gt;
+&lt;li&gt;Implement fun and impactful AI solutions&lt;/li&gt;
+&lt;li&gt;Build cool things&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My list of goals for the future may seem simple to most people but right now this is what I want to do. My favorite part about coding is that I can build something that does something for myself or for other people. I would consider myself to be a creative builder more than anything else. I don&amp;rsquo;t care if it is AI or robotics or even wood working. I just love to create things for myself and the people in my life to enjoy.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
