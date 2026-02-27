@@ -5,6 +5,11 @@ ShowReadingTime = false
 draft = false
 +++
 
+## Reminiscence Therapy Agent Proof of Concept
+For the month of January I spend my freetime building an ai agent using the gemini api that helps dementia patients with their reminiscence therapy. The agent is able to take in a users photos and then use gemini to analyze the photos and then have a conversation with the user about the photos. The agent sends audio chunks over a websocket to the backend where the audio is forwarded to the gemini api and then the model responds with audio chunks that are send back over the websocket to the frontend. Finally, once the chunks reach the frontend they are put in a buffer to prevent a choppy response and then played back to the user. 
+
+Demo Link: https://youtu.be/ZUkc7HOChbo
+
 ## Disc Selection AI Agent
 
 An intelligent disc selection assistant built on Azure Cloud using the GPT-4o-mini model to help disc golf players find the perfect discs for their game. The agent provides personalized disc recommendations by analyzing user inputs including skill level, throwing style, course conditions, and existing discs in their bag.
