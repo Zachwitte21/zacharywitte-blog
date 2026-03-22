@@ -4,12 +4,22 @@
     <title>Blog on Zachary Witte</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Blog on Zachary Witte</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo -- 0.158.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Nov 2025 15:22:12 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 15:45:23 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI Agents With Mcp</title>
+      <title>Takeaways From Google Hackathon</title>
+      <link>http://localhost:1313/posts/takeaways-from-google-hackathon/</link>
+      <pubDate>Fri, 27 Feb 2026 15:45:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/takeaways-from-google-hackathon/</guid>
+      <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;Throughout the month of January I worked on an ai agent that helps dementia patients with their reminiscence therapy. During this process I learned a lot about developement in the new era of AI. In this post I want to share some of my key takeaways from the experience and some of the things I learned along the way.&lt;/p&gt;
+&lt;h1 id=&#34;1-coding-with-ai&#34;&gt;1. Coding with AI&lt;/h1&gt;
+&lt;p&gt;In late November Anthropic released Claude Opus 4.5 and like many others, I believe this was a major turning point in software development or any knowledge based work. Throughout this project I utilized Claude Code and Google&amp;rsquo;s Antigravity IDE to help me plan features and build them out. These tools are game changers for knowledge work because they can quickly retrieve information from documentation like the context7 mcp server, your codebase, or the internet. While have a better model does produce better results, the real trick is all about giving the model the best context possible. Using the context7 mcp server to give the model access to the documentation for the various apis I was using meant that I didn&amp;rsquo;t have to spend time looking through the documentation for code examples or syntax and instead spend time architecting the application to meet my needs. So while coding with AI is clearly here to stay, these models can also be beneficial when creating a PRD or feature specs. The ability to quickly retrieve information about apis or libraries was very beneficial for me during the planning fase when I needed to compare two different options for a certain use.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agents With MCP</title>
       <link>http://localhost:1313/posts/ai-agents-with-mcp/</link>
       <pubDate>Sun, 09 Nov 2025 15:22:12 -0500</pubDate>
       <guid>http://localhost:1313/posts/ai-agents-with-mcp/</guid>
