@@ -7,7 +7,7 @@ images = ["/images/zwitte.jpg"]
 <div style="display: flex; align-items: center; gap: 2rem; max-width: 1200px;">
   <p style="flex: 1; margin: 0; font-size: 1.5rem; line-height: 1.6;">
     <strong>Zachary Witte</strong><br><br>
-    I build AI tools, MCP servers, and mobile apps — with a focus on grounding AI agents in real, domain-specific knowledge. Currently working on Azure-hosted AI systems and open-source MCP integrations.<br><br>
+    I build AI tools, MCP servers, and mobile apps with a focus on grounding AI agents in real, domain-specific knowledge. Currently working on Azure-hosted AI systems and open-source MCP integrations.<br><br>
     Check out my <a href="/projects/">Projects</a> to see what I've been building, or reach me at <a href="mailto:zacharywitte@codebluepanda.com">zacharywitte@codebluepanda.com</a>.
   </p>
   <img src="/images/zwitte.jpg" alt="Zachary Witte"

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zachary Witte</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:52507/</link>
     <description>Recent content on Zachary Witte</description>
-    <generator>Hugo -- 0.158.0</generator>
+    <generator>Hugo -- 0.159.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Feb 2026 15:45:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52507/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Takeaways From Google Hackathon</title>
-      <link>http://localhost:1313/posts/takeaways-from-google-hackathon/</link>
+      <link>http://localhost:52507/posts/takeaways-from-google-hackathon/</link>
       <pubDate>Fri, 27 Feb 2026 15:45:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/takeaways-from-google-hackathon/</guid>
+      <guid>http://localhost:52507/posts/takeaways-from-google-hackathon/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
 &lt;p&gt;Throughout the month of January I worked on an ai agent that helps dementia patients with their reminiscence therapy. During this process I learned a lot about developement in the new era of AI. In this post I want to share some of my key takeaways from the experience and some of the things I learned along the way.&lt;/p&gt;
 &lt;h1 id=&#34;1-coding-with-ai&#34;&gt;1. Coding with AI&lt;/h1&gt;
@@ -20,17 +20,17 @@
     </item>
     <item>
       <title>AI Agents With MCP</title>
-      <link>http://localhost:1313/posts/ai-agents-with-mcp/</link>
+      <link>http://localhost:52507/posts/ai-agents-with-mcp/</link>
       <pubDate>Sun, 09 Nov 2025 15:22:12 -0500</pubDate>
-      <guid>http://localhost:1313/posts/ai-agents-with-mcp/</guid>
+      <guid>http://localhost:52507/posts/ai-agents-with-mcp/</guid>
       <description>&lt;p&gt;Goals for this post.&lt;/p&gt;
 &lt;p&gt;Over the past few months, I’ve been diving deep into the world of Artificial Intelligence. With a background in cloud services like AWS and Microsoft Azure, it’s been a natural fit to use Azure as my main AI hub. One of my favorite recent projects involves building an AI agent for some friends’ disc golf website. The goal is to help players find the right discs based on experience level, throwing style, and the typical courses they play.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <link>http://localhost:52507/posts/first-post/</link>
       <pubDate>Thu, 23 Oct 2025 20:16:24 -0400</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
+      <guid>http://localhost:52507/posts/first-post/</guid>
       <description>&lt;p&gt;Hello Everyone,&lt;/p&gt;
 &lt;p&gt;I am starting a small blog to help me keep track of my work and explain some of the concepts or projects that I am currently learning and working on. Ideally as I start to work on more projects, this will become a great source of information for anyone that is wanting to start a career in technology.&lt;/p&gt;
 &lt;h1 id=&#34;future-goals&#34;&gt;Future Goals&lt;/h1&gt;
@@ -43,9 +43,9 @@
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://localhost:52507/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>http://localhost:52507/projects/</guid>
       <description>&lt;h2 id=&#34;reminiscence-therapy-agent-proof-of-concept&#34;&gt;Reminiscence Therapy Agent Proof of Concept&lt;/h2&gt;
 &lt;p&gt;For the month of January I spend my freetime building an ai agent using the gemini api that helps dementia patients with their reminiscence therapy. The agent is able to take in a users photos and then use gemini to analyze the photos and then have a conversation with the user about the photos. The agent sends audio chunks over a websocket to the backend where the audio is forwarded to the gemini api and then the model responds with audio chunks that are send back over the websocket to the frontend. Finally, once the chunks reach the frontend they are put in a buffer to prevent a choppy response and then played back to the user.&lt;/p&gt;</description>
     </item>
