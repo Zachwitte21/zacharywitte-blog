@@ -17,6 +17,10 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
+  [params.author]
+    name = "Zachary Witte"
+    email = ""
+
 [[menu.main]]
   name = "Projects"
   url = "/projects/"

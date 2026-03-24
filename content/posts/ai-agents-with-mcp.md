@@ -1,7 +1,7 @@
 +++
 date = '2025-11-09T15:22:12-05:00'
 draft = false
-title = 'AI Agents With Mcp'
+title = 'AI Agents With MCP'
 +++
 Goals for this post. 
 
