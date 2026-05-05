@@ -1,29 +1,27 @@
 +++
-date = '2026-05-03T12:00:00-04:00'
+date = '2026-05-05T05:56:30-04:00'
 draft = false
 title = 'Building With Claude Design'
 +++
 
 # Intro
 
-Over the past couple of weeks I have been spending time in the Claude Design preview, and the thing I keep coming back to is this: design is now accessible to anyone willing to spend a weekend playing around in it. I have always considered myself a backend developer, but Claude Design has changed how I think about the boundary between writing software and designing it. This is a tactical post about what I have actually been building with it.
+Over the past couple of weeks I have been spending time in the Claude Design preview, and the thing I keep coming back to is this: design is now accessible to anyone willing to spend a weekend playing around in it. I have never been great a ui/ux, but Claude Design has lower the barrier to entry for me and I have started to learn. I would love to see what a proper designed can do with this tool and I have seen some people make cool things over on X. Below are a couple of uses that I have done over the last few weeks. 
 
-# Redesigning the Reminiscence Agent UI
+# Redesigning the Reminiscence App UI
 
-The first project I put through Claude Design was the dementia reminiscence agent I built during the Google hackathon. The UI I shipped during the hackathon was functional but rough, and I had been wanting to take another pass at it. I gave Claude my existing UI as a starting point and asked it to upgrade the design. Once I landed on a version I actually liked, I had it generate a design system for the rest of the app — colors, typography, components — so the whole experience could be brought up to the same level. The quality jump was big, and that really matters for an app whose users are elderly. Simple, clean UI is not optional in that context. It is the product.
+The first project I put through Claude Design was a mobile app that I am building for people with dementia that I started building during a Google hackathon in January. The UI I shipped during the hackathon was functional but rough, and I had been wanting to take another pass at it. I gave Claude my existing UI as a starting point and asked it to upgrade the design. Once I landed on a version I actually liked, I had it generate a design system for the rest of the app(colors, typography, and components) so the whole experience could be brought up to the same level. The quality jump was big, and that really matters for an app whose users are elderly. Having a simple and clean UI was not optional in that context. Overall I am really happy with it and I hope that it is good enough to release so that one day I can have a proper designer make it even better.
 
-I also used Claude to make a PowerPoint to showcase the app to a group of medical professionals. Same pattern — feed it the substance, let it handle the visual presentation. The slides were ready in a fraction of the time it would have taken me on my own, and they held up in front of a real audience.
+I also used Claude to make a PowerPoint to showcase the app to a group of medical professionals. Same pattern, feed it the substance, let it handle the visual presentation. The slides were ready in a fraction of the time it would have taken me on my own, and they held up in front of a real audience.
 
-# Designing a Prototype From Scratch at DCS
-
-The other project where this has paid off is a prototype I am building from scratch at DCS. Here Claude Design has been even more efficient, because I was not asking it to scan a large existing codebase to understand context. I was just answering its questions about what I wanted, one at a time, and watching the design take shape. That kept my token usage low and the iteration loop fast — which matters during the preview, where rate limits are tight.
+![Redesigned Reminiscence app theme generated in Claude Design](/images/reminisce-design-theme.png)
 
 # What I Like
 
 A few things have stood out as I have been using it:
 
-1. It is a great on-ramp into design for someone who never went deep on it.
-2. This is the AI-driven design format I have been wanting. I have tried tools like Google Stitch and bounced off — generating static photos is not what I need. Claude Design produces something I can actually iterate on inside a real workflow.
+1. It is a great on-ramp into design for someone who has little design experience.
+2. This is the AI-driven design format I have been wanting. I have tried tools like Google Stitch, but I didn't like how it just generated static photos. Claude Design produces something I can actually iterate on inside a real workflow.
 3. It is good for more than UI and UX. PowerPoints, videos, and other visual deliverables work well too, as long as you bring high-quality content for it to work with.
 
 # What I Do Not Like Yet
@@ -35,6 +33,6 @@ It is a preview, so I am holding the rough edges loosely, but two things have bi
 
 # Wrapping Up
 
-Despite the rough edges, I am really excited about this. The bar for entry-level design work just dropped to a weekend of playing around, and that opens the door for a lot of people — myself included — who would not have called themselves designers before.
+Despite a few small issues, I am really excited about this. The bar for entry-level design work just dropped to a weekend of playing around, and that opens the door for a lot of people who would not have called themselves designers before.
 
 - Zachary Witte

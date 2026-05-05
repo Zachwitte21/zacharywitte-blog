@@ -1,0 +1,13 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Stray build dir from typo'd `hugo serve isableFastRender`
+isableFastRender/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+
+.claude/
