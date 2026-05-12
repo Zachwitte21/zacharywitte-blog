@@ -1,7 +1,7 @@
 +++
 date = '2026-05-11T20:45:00-04:00'
 draft = false
-title = 'Planning The Business Before The App'
+title = 'Learning Business Lessons the Hard Way'
 +++
 
 # Intro
