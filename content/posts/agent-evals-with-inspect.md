@@ -5,27 +5,27 @@ title = 'Agent Evals With Inspect'
 +++
 # Intro
 
-I have been building AI agents for a long time now, and for most of that time I tested them the traditional way: a hand-rolled suite of scripts, a pile of test cases, and a lot of manual checking to see if the agent still behaved after I changed a prompt or swapped a model. That works fine for a simple agent. It stops working once the agent runs for a long time, uses tools, or needs to be compared across several models.
+If you are evaluating agents with a hand-rolled test suite, try Inspect. I have been building agents for a long time and I have always tested them with my own scripts: a set of test cases, some manual checking, and a rerun after every prompt or model change. That works for a simple agent. It breaks down once the agent runs for a long time, uses tools, or has to be compared across models.
 
-Over the last couple of months I have been using the Inspect eval framework, both at work (that is all I can say about that) and in my free time on a Pokémon Emerald eval that I have been building and posting about on X. My short take is that if you are evaluating agents and still maintaining your own harness for it, Inspect is worth a look.
+Over the last couple of months I have been using the Inspect eval framework in two places. One is at work, which is all I can say about that. The other is my free time project, a Pokémon Emerald eval that I have been building and posting about on X.
 
 # What Inspect Gave Me
 
-A few things that I used to build by hand, or never built at all:
+Four things I used to build by hand, or never built at all:
 
-1. **Checkpoint and resume.** Agent runs can be long and they do fail partway through. With Inspect I can pick a run back up from a checkpoint instead of paying for the whole thing again. In the Emerald eval I killed episodes on purpose to test this, and the resumed runs matched the ones I let finish.
-2. **Model-agnostic runs.** Swapping models is a config change instead of a rewrite. That is what makes a leaderboard realistic, because comparing a handful of models should not mean maintaining a handful of integrations.
-3. **Logs and a viewer.** Every run is logged, and Inspect View lets me read through what the agent actually did. I used to build my own scrappy version of this every time, and it was never as good.
-4. **Scorers and sandboxing.** Grading lives in a structured scorer instead of scattered through my scripts, and the environment the agent runs in can be sandboxed. For Emerald, that means a Dockerized emulator that behaves the same on every run.
+1. **Checkpoint and resume.** Agent runs are long and they fail partway through. Inspect lets me resume from a checkpoint instead of paying for the whole run again. I killed Emerald episodes on purpose to test it, and the resumed runs matched the ones I let finish.
+2. **Model-agnostic runs.** Swapping models is a config change, not a rewrite. That is what makes a leaderboard realistic.
+3. **Logs and a viewer.** Every run is logged and Inspect View lets me read what the agent actually did. I used to build a rough version of this every time. It was never as good.
+4. **Scorers and sandboxing.** Grading lives in a scorer instead of being scattered through my scripts, and the emulator runs in a Docker sandbox so every run starts the same.
 
-None of these are flashy on their own. Together they mean I spend my time on the eval itself (what should the agent be doing, and how do I score it) and less time on plumbing.
+None of these are flashy. Together they mean I spend my time on what the agent should do and how to score it, not on plumbing.
 
 # The Emerald Eval
 
-The Pokémon Emerald eval is my free-time project for putting this into practice. Models play the game and get scored on how far they get. I have been sharing progress on X, and I will go deeper on the details in future posts.
+The Emerald eval is where I am putting this into practice. Models play the game and get scored on how far they get. I will go deeper on the details in future posts.
 
 # What's Next
 
-Later today I am posting the first leaderboard with a few models on it, and over the coming weeks I plan to keep growing it. If you want to follow along, I am on X at [@zachary_witte](https://x.com/zachary_witte).
+The first leaderboard goes up later today with a few models on it. I plan to keep growing it over the coming weeks. I post updates on X at [@zachary_witte](https://x.com/zachary_witte).
 
 – Zachary Witte
