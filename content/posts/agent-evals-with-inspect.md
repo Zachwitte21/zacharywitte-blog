@@ -1,6 +1,6 @@
 +++
 date = '2026-10-17T12:00:00-04:00'
-draft = true
+draft = false
 title = 'Agent Evals With Inspect'
 +++
 # Intro
