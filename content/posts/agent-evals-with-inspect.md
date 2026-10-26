@@ -5,7 +5,7 @@ title = 'Agent Evals With Inspect'
 +++
 # Intro
 
-If you are evaluating agents with a hand-rolled test suite, try Inspect. I have been building agents for a long time and I have always tested them with my own eval suites: a set of test cases, some manual checking, and a rerun after every prompt or model change. That works well but it takes a while to setup each time and make sure that I am tracking all of the information that I need.
+If you are evaluating agents with a hand-rolled test suite, try Inspect. I have been building agents for a long time, like the [disc golf agent](/posts/ai-agents-with-mcp/) and the [reminiscence therapy agent](/posts/takeaways-from-google-hackathon/), and I have always tested them with my own eval suites: a set of test cases, some manual checking, and a rerun after every prompt or model change. That works well but it takes a while to setup each time and make sure that I am tracking all of the information that I need.
 
 Over the last couple of months I have been using the Inspect eval framework almost exclusively now. In my free time I have started a project, the Pokémon Emerald eval that I have been building and posting about on X.
 

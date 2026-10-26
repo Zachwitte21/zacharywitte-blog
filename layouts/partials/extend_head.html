@@ -1,0 +1,17 @@
+{{- if or .IsHome (eq .RelPermalink "/about/") }}
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" (printf "%s#person" site.Home.Permalink)
+  "name" "Zachary Witte"
+  "url" site.Home.Permalink
+  "image" (absURL "/images/zwitte.jpg")
+  "jobTitle" "Software Developer"
+  "description" "Software developer who builds AI agents, MCP servers, and cloud systems, and is building Sollund, a mobile app for people living with dementia and their caregivers."
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Greater Philadelphia Area" "addressCountry" "US")
+  "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "University of Delaware")
+  "knowsAbout" (slice "AI agents" "Model Context Protocol (MCP) servers" "Cloud computing (Google Cloud, AWS, Azure)" "Mobile app development" "Technology for dementia care")
+  "sameAs" (slice "https://www.linkedin.com/in/zacharywitte2025/" "https://github.com/Zachwitte21" "https://x.com/zachary_witte")
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- end }}
