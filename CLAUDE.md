@@ -39,6 +39,16 @@ Hugo must be installed locally for development. Common Hugo commands:
 - The home page uses Hugo Blox sections/blocks system for layout
 - Hugo Blox supports various block types: hero, markdown, portfolio, etc.
 
+### Rules for every new blog post
+
+Internal links and search/AI discoverability are not automatic on this site (the theme only adds previous/next links at the bottom of a post), so do these by hand for every new post in `content/posts/`:
+
+- **Link to related posts in the body.** Add at least 2 inline links from the new post to existing posts it relates to, written naturally in the text (e.g. "I wrote about this in [Post Title](/posts/post-slug/)"). Use site-relative paths ending in a slash, matching the post's filename without `.md`.
+- **Link back from the older posts.** Add a link from at least one relevant existing post to the new post, so the new post is not an orphan and older posts point forward to it.
+- **Check that every link resolves.** The slug must match an existing file in `content/posts/`, and the build must still succeed.
+- **Add a `description` to the front matter**: one plain sentence summarizing the post. Search engines and AI tools use it as the snippet.
+- **Keep the email address and employer name out of metadata.** Never put an email address anywhere on the site. Do not name DCS Corporation in page `description`s or structured data (`layouts/partials/extend_head.html`); on the About page it appears only in the "By day" paragraph.
+
 ## Deployment
 
 The site automatically deploys to GitHub Pages via `.github/workflows/hugo.yml` when changes are pushed to the main branch. The workflow:

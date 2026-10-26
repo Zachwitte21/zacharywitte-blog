@@ -6,7 +6,7 @@ title = 'Learning Business Lessons the Hard Way'
 
 # Intro
 
-For the past few months I have been building a mobile app for people with dementia. The plan was always to ship it under the name Reminisce, which is what we had called the project since the Google hackathon back in January. What I did not plan for was finding out, about two months before I was ready to launch, that "Reminisce" was way too generic to safely trademark. Multiple companies were already operating in adjacent spaces, and unless I wanted to pay a lawyer to argue my app was different, I needed a new name. That single discovery is what this post is really about, because what looked like a quick branding problem ended up reshaping how I think about starting a project.
+For the past few months I have been building a mobile app for people with dementia. The plan was always to ship it under the name Reminisce, which is what we had called the project since the [Google hackathon](/posts/takeaways-from-google-hackathon/) back in January. What I did not plan for was finding out, about two months before I was ready to launch, that "Reminisce" was way too generic to safely trademark. Multiple companies were already operating in adjacent spaces, and unless I wanted to pay a lawyer to argue my app was different, I needed a new name. That single discovery is what this post is really about, because what looked like a quick branding problem ended up reshaping how I think about starting a project. For the design side of the same app, see [Building With Claude Design](/posts/building-with-claude-design/).
 
 # The Rename
 
