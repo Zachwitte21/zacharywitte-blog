@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zacharywitte.com/sitemap.xml
