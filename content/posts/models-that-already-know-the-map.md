@@ -3,6 +3,11 @@ date = '2026-10-31T06:00:00-04:00'
 draft = false
 title = 'When the Model Already Knows the Map'
 description = 'My Pokémon Emerald eval has a leaderboard leader that mostly won by remembering the game from training data instead of exploring it, and what that means for game-based agent evals.'
+
+[cover]
+image = '/images/emerald-map-cover.webp'
+alt = 'Title card for When the Model Already Knows the Map, a Pokémon Emerald eval post, with a pixel-art Mudkip and the line: 52% of Argon walks aimed at tiles it had never seen.'
+relative = false
 +++
 
 # Intro
@@ -17,7 +22,13 @@ The harness shows the model its own position and nothing about where doors or ex
 
 On Argon's first turn in Rustboro City, standing at (19,59), it pathed to (27,20). That is the exact tile of the Gym door, 39 tiles away and far off screen. It was inside the Gym two turns after reaching the city. Muse Spark 1.3 took 88 turns to do the same thing.
 
-It was not a one-off:
+![Diagram of Argon's first turn in Rustboro: Argon stands at tile (19,59) and sees a 15 by 10 tile window around itself, while the Gym door at (27,20) is 39 tiles away, outside that window and never shown to the model, yet one navigate_to call targets it](/images/emerald-rustboro-first-turn.webp)
+
+![Bar chart of turns from reaching Rustboro City to entering the Gym: Gemini 4 Argon 2, Claude Fable 5.1 9, Muse Wonder 17, Claude Haiku 5.5 21, Claude Opus 5.5 36, Claude Sonnet 5.5 43, Muse Spark 1.3 88, GPT-6 Luna 112](/images/emerald-turns-to-gym.webp)
+
+Argon was not the only quick one. Claude Fable 5.1 got into the Gym after 9 turns, the second fastest of the eight runs. Fable was not part of the blind-target check below, which covers the first five runs, so I cannot say whether it was also leaning on memory.
+
+Argon's was not a one-off:
 
 - **Petalburg Woods:** on entering, it wrote the north exit into its notes and pathed toward it five times, with a wild battle interrupting each attempt.
 - **Route 103:** it pathed straight to where the rival stands.
@@ -27,13 +38,7 @@ It was not a one-off:
 
 For every walking target in a run, I checked whether that tile had ever been on screen. The model's view is roughly 15 by 10 tiles centered on the player, so a target outside that window at every point in the run is a blind target.
 
-| Model | Walks aimed at tiles never on screen |
-|---|---|
-| Gemini 4 Argon | 52% (14 of 27) |
-| Muse Wonder | 32% (24 of 74) |
-| Claude Haiku 5.5 | 17% (14 of 83) |
-| Muse Spark 1.3 | 13% (19 of 149) |
-| GPT-6 Luna | 8% (45 of 547) |
+![Bar chart of the share of navigate_to walks aimed at tiles never on screen, first five runs: Gemini 4 Argon 52% (14 of 27), Muse Wonder 32% (24 of 74), Claude Haiku 5.5 17% (14 of 83), Muse Spark 1.3 13% (19 of 149), GPT-6 Luna 8% (45 of 547)](/images/emerald-blind-targets.webp)
 
 Every model aims at the unknown sometimes, and that is fine. "Go 30 tiles north" is a reasonable way to explore. The difference is in where the targets land. The other models' blind targets look like guesses. Argon's land on the exact tile it needs.
 
@@ -46,6 +51,8 @@ When I think of a model "knowing" something from training, I expect a mix of rig
 - Its plan for after the badge was correct too, covering Rusturf Tunnel, Peeko, and Mr. Stone at Devon Corp. None of that is in the prompt.
 
 I did not find a single hallucination in its run, but there is a catch. Argon never called `verify_objective`, the tool for checking its own progress, even once. Spark called it 11 times. That saves Argon turns, and it also means there were no claims in its run for me to grade. It also barely narrated, writing 21k output tokens against Spark's 110k.
+
+![Two stat panels comparing Gemini 4 Argon and Muse Spark 1.3: verify_objective calls, 0 versus 11, and output tokens, 21k versus 110k](/images/emerald-verify-and-tokens.webp)
 
 This lines up with an outside benchmark. [Artificial Analysis](https://artificialanalysis.ai/) publishes AA-Omniscience, which scores how often a model answers wrongly instead of admitting it does not know (lower is better), and Gemini 4 Argon has the lowest rate on their chart at 15%. That is a different thing from knowing a lot, but it fits what I saw: when Argon committed to a coordinate, the coordinate was right.
 
