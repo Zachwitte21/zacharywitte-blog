@@ -24,8 +24,6 @@ On Argon's first turn in Rustboro City, standing at (19,59), it pathed to (27,20
 
 ![Diagram of Argon's first turn in Rustboro: Argon stands at tile (19,59) and sees a 15 by 10 tile window around itself, while the Gym door at (27,20) is 39 tiles away, outside that window and never shown to the model, yet one navigate_to call targets it](/images/emerald-rustboro-first-turn.webp)
 
-![Bar chart of turns from reaching Rustboro City to entering the Gym: Gemini 4 Argon 2, Claude Fable 5.1 9, Muse Wonder 17, Claude Haiku 5.5 21, Claude Opus 5.5 36, Claude Sonnet 5.5 43, Muse Spark 1.3 88, GPT-6 Luna 112](/images/emerald-turns-to-gym.webp)
-
 Argon was not the only quick one. Claude Fable 5.1 got into the Gym after 9 turns, the second fastest of the eight runs. Fable was not part of the blind-target check below, which covers the first five runs, so I cannot say whether it was also leaning on memory.
 
 Argon's was not a one-off:
