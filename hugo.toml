@@ -17,9 +17,7 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-  [params.author]
-    name = "Zachary Witte"
-    email = ""
+  author = "Zachary Witte"
 
 [[menu.main]]
   name = "About"
