@@ -54,10 +54,6 @@ I did not find a single hallucination in its run, but there is a catch. Argon ne
 
 ![Two stat panels comparing Gemini 4 Argon and Muse Spark 1.3: verify_objective calls, 0 versus 11, and output tokens, 21k versus 110k](/images/emerald-verify-and-tokens.webp)
 
-This lines up with an outside benchmark. [Artificial Analysis](https://artificialanalysis.ai/) publishes AA-Omniscience, which scores how often a model answers wrongly instead of admitting it does not know (lower is better), and Gemini 4 Argon has the lowest rate on their chart at 15%. That is a different thing from knowing a lot, but it fits what I saw: when Argon committed to a coordinate, the coordinate was right.
-
-There is a curiosity in the numbers too. On their chart Spark sits at 33% and GPT-6 Luna at 77%. Lined up against my table, the models with lower hallucination rates also aimed at more blind targets: Argon at 15% and 52%, Spark at 33% and 13%, Luna at 77% and 8%. That is three models, and the settings on their chart may not match my runs, so I would not read much into it, but I will be watching whether it holds as more models are added.
-
 # What This Means for the Eval
 
 Argon's lead is mostly memorized map knowledge, not navigation skill. Under my own rules, that is fair: the model's own ability counts and nobody gets play hints. But it means this eval partly measures how well a model remembers Pokémon Emerald, and it feels like benchmark maxing instead of measuring the model's ability.
