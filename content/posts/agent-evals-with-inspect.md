@@ -26,6 +26,6 @@ The Emerald eval is where I am putting this into practice. Models play the game 
 
 # What's Next
 
-The first leaderboard goes up later today with a few models on it. I plan to keep growing it over the coming weeks. I post updates on X at [@zachary_witte](https://x.com/zachary_witte).
+The first leaderboard goes up later today with a few models on it. I plan to keep growing it over the coming weeks. One thing the early results already showed me is that a well-known game can be partly memorized, which I wrote about in [When the Model Already Knows the Map](/posts/models-that-already-know-the-map/). I post updates on X at [@zachary_witte](https://x.com/zachary_witte).
 
 – Zachary Witte
