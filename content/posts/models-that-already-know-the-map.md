@@ -7,9 +7,9 @@ description = 'My Pokémon Emerald eval has a leaderboard leader that mostly won
 
 # Intro
 
-The first leaderboard for my Pokémon Emerald eval has been up for a couple of weeks, and one result bothered me enough to dig into the logs. Gemini 4 Argon finished first, and the more I read its run, the less it looked like a model figuring out a game and the more it looked like a model recalling one. This post is about how I checked that, what I found, and what it means for any eval that uses a well-known game.
+The first leaderboard for my Pokémon Emerald eval has been up for about a week now, and Gemini 4 Argon finished first. The way it got there shocked me. This post is about how I checked that, what I found, and what it means for any eval that uses a well-known game.
 
-If you missed the setup, I wrote about the framework in [Agent Evals With Inspect](/posts/agent-evals-with-inspect/). The short version: a model starts a new game and has to reach the first gym badge, and progress is graded from the game's RAM, so the model cannot just say it got the badge. Each turn is one tool call like `navigate_to`, `press`, `battle`, or `advance_dialog`.
+If you missed the setup, I wrote about the framework in [Agent Evals With Inspect](/posts/agent-evals-with-inspect/). The short version: a model starts a new game and has to reach the first gym badge, and progress is graded from the game's RAM. Each turn is one tool call like `navigate_to`, `press`, `battle`, or `advance_dialog`.
 
 # The First Turn in Rustboro
 
@@ -25,7 +25,7 @@ It was not a one-off:
 
 # Measuring It
 
-One impressive moment is an anecdote, so I counted. For every walking target in a run, I checked whether that tile had ever been on screen. The model's view is roughly 15 by 10 tiles centered on the player, so a target outside that window at every point in the run is a blind target.
+For every walking target in a run, I checked whether that tile had ever been on screen. The model's view is roughly 15 by 10 tiles centered on the player, so a target outside that window at every point in the run is a blind target.
 
 | Model | Walks aimed at tiles never on screen |
 |---|---|
@@ -47,11 +47,15 @@ When I think of a model "knowing" something from training, I expect a mix of rig
 
 I did not find a single hallucination in its run, but there is a catch. Argon never called `verify_objective`, the tool for checking its own progress, even once. Spark called it 11 times. That saves Argon turns, and it also means there were no claims in its run for me to grade. It also barely narrated, writing 21k output tokens against Spark's 110k.
 
+This lines up with an outside benchmark. [Artificial Analysis](https://artificialanalysis.ai/) publishes AA-Omniscience, which scores how often a model answers wrongly instead of admitting it does not know (lower is better), and Gemini 4 Argon has the lowest rate on their chart at 15%. That is a different thing from knowing a lot, but it fits what I saw: when Argon committed to a coordinate, the coordinate was right.
+
+There is a curiosity in the numbers too. On their chart Spark sits at 33% and GPT-6 Luna at 77%. Lined up against my table, the models with lower hallucination rates also aimed at more blind targets: Argon at 15% and 52%, Spark at 33% and 13%, Luna at 77% and 8%. That is three models, and the settings on their chart may not match my runs, so I would not read much into it, but I will be watching whether it holds as more models are added.
+
 # What This Means for the Eval
 
-Argon's lead is mostly memorized map knowledge, not navigation skill. Under my own rules, that is fair: the model's own ability counts and nobody gets play hints. But it means this eval partly measures how well a model remembers Pokémon Emerald, and I want to be upfront about that whenever I post the leaderboard.
+Argon's lead is mostly memorized map knowledge, not navigation skill. Under my own rules, that is fair: the model's own ability counts and nobody gets play hints. But it means this eval partly measures how well a model remembers Pokémon Emerald, and it feels like benchmark maxing instead of measuring the model's ability.
 
-Two caveats on my own analysis:
+A few caveats on my own analysis:
 
 - Argon's reasoning is encrypted, so I cannot prove where the coordinates came from. I am inferring it from behavior, and the behavior is hard to explain any other way.
 - The on-screen test assumes a 15 by 10 view, so the percentages are approximate. I ran it on the first five runs, before the later ones were added.
@@ -69,6 +73,6 @@ This is the same lesson I keep relearning from my other agent work. In [AI Agent
 
 # What's Next
 
-I am thinking about how to add a variant of the eval that a model cannot have memorized, and about whether to report both scores side by side. I will post what I settle on, and I keep the running results on X at [@zachary_witte](https://x.com/zachary_witte).
+I am thinking about how to add a variant of the eval that a model cannot have memorized. There are a couple of ways to do this but I am leaning towards making a Pokémon fan-game that is just 1-2 badges long myself. I will post what I settle on, and I keep the running results on X at [@zachary_witte](https://x.com/zachary_witte).
 
 – Zachary Witte
